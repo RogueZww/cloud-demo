@@ -1,0 +1,13 @@
+server.port: 1111
+spring.application.name: eureka
+context.path: erk
+# eureka
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl.defaultZone: http://localhost:${server.port}/eureka
+  server:
+    enableSelfPreservation: false
+#actuator
+management.security.enabled: false

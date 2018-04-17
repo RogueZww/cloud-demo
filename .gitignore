@@ -1,0 +1,55 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Intellij
+.idea/
+*.iml
+*.iws
+**/out
+
+# Mac
+.DS_Store
+
+# Maven
+**/log/
+**/target
+**/*.log
+**/tmp
+**/.tmp
+**/bin/**
+
+**.retry
+.git-credentials
+
+# log.xml
+**/src/main/resources/log4j2.xml
+
+# hap/msgRedis.yml
+**/src/main/resources/hap/msgRedis.yml
+
+# hmallProperties.yml
+**/src/main/resources/hmallProperties.yml
+
+# adminProperties.yml
+**/src/main/resources/adminProperties.yml
+
+# hystrixProperties.yml
+**/src/main/resources/hystrixProperties.yml
+
+# healthProperties.yml
+**/src/main/resources/healthProperties.yml
+
+# msgRabbitmq.yml
+**/src/main/resources/msgRabbitmq.yml
+
+# application.yml
+**/src/main/resources/config/application.yml
+# pid
+*.pid
+
+#port
+*.port
