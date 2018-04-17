@@ -1,0 +1,26 @@
+server.port: 4496
+spring:
+  application.name: api-gateway
+  cloud.loadbalancer.retry.enabled: false
+#eureka
+eureka:
+  client:
+    serviceUrl.defaultZone: http://localhost:1111/eureka
+
+#zuul
+zuul:
+  routes:
+    rServer:
+      path: /ribbonServer/**
+      serviceId: ribbonServer
+#      stripPrefix: false
+    ribbonConsumer: /ribbonConsumer/**
+  prefix: /api
+  retryable: false
+#  TokenFilter.pre.disable: true
+#  stripPrefix: false
+#  ignored-service: ribbonServer
+#hystrix
+hystrix:
+  command.default.execution.isolation.thread:
+    timeoutInMilliseconds: 5000

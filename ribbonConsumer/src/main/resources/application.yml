@@ -1,0 +1,24 @@
+server.port: 4399
+spring:
+  application.name: ribbonConsumer
+  cloud.loadbalancer.retry.enabled: false
+
+#eureka
+eureka:
+  client:
+    serviceUrl.defaultZone: http://localhost:1111/eureka
+#hystrix
+hystrix:
+  command.default.execution.isolation.thread:
+    timeoutInMilliseconds: 5000
+  command.default.fallback:
+    enabled: false
+#ribbon
+ribbon:
+  ConnectTimeout: 1000
+  ReadTimeout: 2000
+  OkToRetryOnAllOperations: true
+#  MaxAutoRetriesNextServer: 1
+#  MaxAutoRetries: 1
+#feign
+logging.level.com.zww.cloud.client.apfClient: DEBUG
