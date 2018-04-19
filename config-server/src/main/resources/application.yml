@@ -1,0 +1,3 @@
+security.user:
+  name: scott
+  password: tiger

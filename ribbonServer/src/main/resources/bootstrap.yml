@@ -1,0 +1,12 @@
+#config
+spring.cloud.config:
+  discovery:
+    enabled: true
+  profile: dev
+  label: wz
+  username: scott
+  password: tiger
+#eureka
+eureka:
+  client:
+    serviceUrl.defaultZone: http://localhost:1111/eureka
