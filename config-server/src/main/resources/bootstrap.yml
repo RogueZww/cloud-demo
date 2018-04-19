@@ -5,3 +5,11 @@ spring.application.name: configServer
 eureka:
   client:
     serviceUrl.defaultZone: http://localhost:1111/eureka
+
+#config
+spring.cloud.config.server:
+  git:
+    uri: https://github.com/RogueZww/config-server-repository/
+    searchPaths: configRepo
+#    username: ${username}
+#    password: ${password}
