@@ -1,0 +1,2 @@
+spring.application.name: streamDemo
+server.port: 4796
