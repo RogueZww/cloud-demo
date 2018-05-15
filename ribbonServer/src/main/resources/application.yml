@@ -9,3 +9,13 @@ eureka:
     serviceUrl.defaultZone: http://localhost:1111/eureka
 #actuator
 management.security.enabled: false
+#rabbitMQ
+spring.rabbitmq:
+  host: localhost
+  port: 5672
+  username: scott
+  password: tiger
+#bus
+#spring.cloud.bus:
+#  trace:
+#    enabled: true
